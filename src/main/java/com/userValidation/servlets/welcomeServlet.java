@@ -19,7 +19,8 @@ public class welcomeServlet extends HttpServlet {
 	    PrintWriter out = response.getWriter();  
 	          
 	    String n=request.getParameter("username");  
-	    out.print("Welcome "+n);  
+	    out.print("<h2>Welcome " +n+"</h2>");  
+	    out.print("<br/><br/><a href='index.html'>LogOut</a>");
 	          
 	    out.close(); 
 	}
